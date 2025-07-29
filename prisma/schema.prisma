@@ -24,7 +24,7 @@ model User {
 model Project {
   id        String   @id @default(cuid())
   name      String
-  description      String
+  description      String?
   userId    String?
   messages  String   @default("[]")
   data      String   @default("{}")
